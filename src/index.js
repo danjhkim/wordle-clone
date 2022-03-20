@@ -297,12 +297,18 @@ function update() {
                     if (!keyTile.classList.contains("correct")) {
                         keyTile.classList.add("present");
                     }
+
+                
                     letterCount[letter] -= 1;
                 } // Not in the word or (was in word but letters all used up to avoid overcount)
-                else {
+                else if (!word.includes(letter)) {
+                    let keyTile = document.getElementById("Key" + letter)
+
                     currTile.classList.add("absent");
-                    let keyTile = document.getElementById("Key" + letter);
-                    keyTile.classList.add("absent")
+                    if (!keyTile.classList.contains("correct") && !keyTile.classList.contains("present")){
+                        keyTile.classList.add("absent")
+                    }
+
                 }
             }
 
