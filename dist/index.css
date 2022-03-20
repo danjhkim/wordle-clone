@@ -7,7 +7,7 @@ body {
 }
 
 hr {
-	width: 500px;
+	width: 90%;
 }
 
 #title {
@@ -29,7 +29,7 @@ hr {
 	margin: 0 auto;
 	width: 350px;
 	height: 420px;
-	margin-top: 5em;
+	margin-top: 1.5em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -309,5 +309,9 @@ hr {
 		font-weight: 900;
 		font-size: 18px;
 	}
-	
+
+
+	#board {
+	margin-top: 1.5em;
+}
 }
